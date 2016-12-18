@@ -1,14 +1,15 @@
 import Vue from 'vue'
-import App from './App.vue'
 import Router from 'vue-router'
+Vue.use(Router)
+
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+Vue.use(MintUI)
+
 /* 引入FontAwesome */
 require('../node_modules/font-awesome/css/font-awesome.min.css')
 window.$ = require('jquery')
-Vue.use(MintUI)
-Vue.use(Router)
-
+alert(1)
 
 /* 引入模块 */
 import Home from './components/Home.vue'
@@ -32,8 +33,9 @@ const router = new Router({
 	]
 })
 
+alert(2)
 
-
+import App from './App.vue'
 new Vue({
   el: '#app',
   render: h => h(App),
