@@ -3,15 +3,11 @@ import App from './App.vue'
 import Router from 'vue-router'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+/* 引入FontAwesome */
+require('../node_modules/font-awesome/css/font-awesome.min.css')
 window.$ = require('jquery')
 Vue.use(MintUI)
 Vue.use(Router)
-
-
-/* 引入FontAwesome */
-import Icon from 'vue-awesome/components/Icon.vue'
-import 'vue-awesome/icons'
-Vue.component('icon', Icon)
 
 
 /* 引入模块 */
