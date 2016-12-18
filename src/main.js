@@ -9,7 +9,6 @@ Vue.use(MintUI)
 /* 引入FontAwesome */
 require('../node_modules/font-awesome/css/font-awesome.min.css')
 window.$ = require('jquery')
-alert(1)
 
 /* 引入模块 */
 import Home from './components/Home.vue'
@@ -32,8 +31,6 @@ const router = new Router({
 		{ path: '/actions', component: Actions }
 	]
 })
-
-alert(2)
 
 import App from './App.vue'
 new Vue({
